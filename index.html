@@ -5,27 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheets/style.css"/>
-    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<!-- TODO - FAVICON -->
+    <title>Brand Name</title>
 </head>
 <body>
     <header>
-        <div class="nav_bar"> 
-            <p>LOGO</p>
+        <p>Brand Name</p>
+        <nav>
             <ul class="nav_links">
-                <li>About</li>
-                <li>Quiz</li>
-                <li>Resources</li>
-                <li id="login" >Login</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Resources</a></li>
             </ul>
-        </div>
+        </nav>
+        
+        <a id="login"><button>Login</button></a>
+        <!-- <a href='quiz.html'><button class="login">TAKE THE QUIZ </button> </a> -->
+     
     </header>
     <div>
-        <h1>Test your knowledge</h1>
-        <p>First paragraph</p>
-        <button>Take the quiz</button>
-    </div>
-    <img alt="finance data image"src=".images/png/financedata.png" />
-
+        <div class="landing_left">
+            <h1>Test your knowledge</h1>
+            <p id="intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis est id massa accumsan luctus. Donec eget ultricies sem, imperdiet mollis ligula. Donec eget ultricies sem, imperdiet mollis ligula.</p>
+            <a href='quiz.html'><button id="quiz">Take the quiz</button> </a>
+        </div>
+        <img id="landing_img" alt="finance data image"src="images/png/finance data.png" />
+     </div>  
     <script>src="index.js"</script></script>
 </body>
 </html>
