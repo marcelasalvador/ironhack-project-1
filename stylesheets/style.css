@@ -10,19 +10,81 @@
 
 /* TODO burger menu */
 
-@media (max-width: 768px) {
+@media only screen
+and (max-width : 1100px) {
     nav {
         visibility: hidden;
-        display: flex;
+       
+    }
+
+    #landing_img {
+        display:none;
     }
     
 }
 
+html {
+    height:100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100vw;
+    min-height: 100%;
+    
+}
 
-li, a {
+header {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5vh 0 5vh 0vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo p {
+    color:#000000;
+    font-weight: bolder;
+    font-size: larger;
+   
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+    align-items: center;
+    list-style: none;
+    font-size: .88rem;
+    margin-left: auto;
+    
+
+}
+
+.nav_links a {
+    
+    transition: all 0.3s ease 0s;
     font-weight:500;
     text-decoration: none;
     color: #A09E9E;
+    
+
+}
+
+.nav_links a:hover {
+    color: black;
+
+}
+.nav_links a:active { 
+    /* text-decoration: underline 3px;  */
+    font-size:.95rem;
+    /* color: #6667ab; */
 
 }
 
@@ -55,89 +117,45 @@ li, a {
     border: 1px #000000 solid;
 
 }
-
-header {
+#landing-page {
+    width: 80vw;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-p {
-    cursor: pointer;
-    font-weight: bolder;
+.landing_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:30vw;
     margin-right:auto;
 
 }
 
-.nav_links {
-    list-style: none;
-    font-size: small;
-
-}
-
-.nav_links a:active { 
-    text-decoration: underline 3px; 
-    color: #6667ab;
-
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-
-}
-
-.nav_links li a:hover {
-    color: black;
-
-}
-
-div {
-    justify-content: left;
-    align-content: space-around;
-    display:flexbox;
- 
-}
-
-
 .landing_left h1 {
-    width: 513px;
-    height: 146px;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 120.68%;
+    margin-bottom: 5vh;
 
 }
 
 #intro_text {
-    width: 513px;
-    height: 88px;
-    left: 27px;
-    top: 37px;
-    left: 27px;
-    top: 235px;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 164.68%;
+    /* margin-bottom: 3vh; */
 
 }
 
 #quiz {
-    width: 161px;
-    height: 44px;
-    left: 27px;
-    top: 438px;
+    
     color: white;
     background-color: #6667AB;
+    padding: 1vh;
     border:none;
     border-radius: 10px;
     transition: all 0.3s ease 0s;
@@ -145,28 +163,29 @@ div {
 }
 
 #quiz:hover {
-    background-color: #6667ab;
     opacity: 0.9;
     cursor: pointer;
 
 }
 
-#quiz:active {
-    background-color: #6667ab;
+#quiz:active {  
     opacity: 0.9;
     border: 1.5px #000000 solid;
 
 }
 
  #landing_img {
-    width: 641.51px;
-    height: 626.39px;
+  width:  auto;
 
 }
 
 
 /* quiz page */
 
+.quiz_intro {
+    width: 80vw;
+    margin-top: 10vh;
+}
 .quiz_intro h4 {
     font-style: normal;
     font-weight: 700;
@@ -180,12 +199,35 @@ div {
     font-weight: 400;
     font-size: 18px;
     line-height: 161.68%;
+    
+   
 }
 
 .quiz_container {
     width: 50%;
+    height:50vh;
+    overflow:scroll;
+    /* overflow-x:hidden; */
 
 }
+
+.quiz_container::-webkit-scrollbar {
+    -webkit-appearance: none;
+    
+}
+
+.quiz_container::-webkit-scrollbar:vertical {
+    width: 11px;
+    
+}
+
+.quiz_container::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+    
+}
+
 #counter {
     font-style: normal;
     font-weight: 700;
@@ -230,13 +272,26 @@ div {
     
 }
 
+
+
 /* TODO change selection background color  */
 
 /* .choice input:checked {
     background-color: #2eaadc;
 } */
 
-.qDiv {
+/* .qDiv {
     visibility: hidden;
     height: 0vh;
+} */
+
+.scoreDiv {
+    visibility: hidden;
+    height: 0px;
+}
+
+footer {
+    font-size: smaller;
+    color: grey;
+    margin-top: 10vh;
 }
