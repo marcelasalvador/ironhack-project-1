@@ -15,7 +15,7 @@
         <a id="logo" href="index.html"><p>Brand Name</p></a>
         <nav class="nav_links" >
                 <a href="#">About</a>
-                <a href="#">Quiz</a>
+                <a href="quiz.html">Quiz</a>
                 <a href="#">Resources</a>
                 <a id="login"><button>Login</button></a>      
         </nav>
@@ -24,12 +24,11 @@
     </header>
 
     <div class="quiz_intro">
-        <h4>Personal Finance Quiz</h4>
+        <h1>Personal Finance Quiz</h1>
         <br>
         <p>This quiz will help you measure your personal finance knowledge and identify areas of improvement.
         </p>
-        <br>
-        <br>
+       
     </div>
 
     <!-- quiz area -->
@@ -44,7 +43,7 @@
         
             <form name="quiz_choices" id="quiz_choices">
 
-                <div id="question1-1">
+                <div class="qDiv" id="question1-1">
                     <p class="question"> 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
                     <p class="choice"><input type="radio" name="question1" value="choice1"> A. choice1</p>
                     <p class="choice"><input type="radio" name="question1" value="choice2"> A. choice2</p>
@@ -120,10 +119,11 @@
 
     <div class="scoreDiv" id="pass"> 
         <div class="pass_left">
-            <h1>Your Score</h1>
+            <h1 id="score_h1">Your Score</h1>
             <p id="pass_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis est id massa accumsan luctus. Donec eget ultricies sem, imperdiet mollis ligula. Donec eget ultricies sem, imperdiet mollis ligula.</p>
-            <a href='https://www.investopedia.com/terms/p/personalfinance.asp'><button id="score-button ">Learn More</button> </a>
+            <a href='https://www.investopedia.com/terms/p/personalfinance.asp'><button id="score-button">Learn More</button> </a>
         </div>
+
         <div id="pass">
             <div class="scoreCircle">
                 <div class="percentageContainer">
@@ -136,18 +136,19 @@
   <!-- fail div  -->
 
     <div class="scoreDiv" id="fail"> 
-        <div class="pass_left">
+        <div class="fail_left">
             <h1>Your Score</h1>
-            <p id="pass_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis est id massa accumsan luctus. Donec eget ultricies sem, imperdiet mollis ligula. Donec eget ultricies sem, imperdiet mollis ligula.</p>
+            <p id="fail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis est id massa accumsan luctus. Donec eget ultricies sem, imperdiet mollis ligula. Donec eget ultricies sem, imperdiet mollis ligula.</p>
             <a href='quiz.html'><button id="score-button">Try Again</button></a>
-         </div>
+        </div>
+
         <div id="fail">
-               <div class="scoreCircle">
-                    <div class="percentageContainer">
-                        <p><span id="percentage">0</span>%</p>
-                    </div>
-               </div>
-            </div> 
+            <div class="scoreCircle">
+                <div class="percentageContainer">
+                    <p><span id="percentage2">0</span>%</p>
+                </div>
+            </div>
+        </div> 
     </div>
 
     <!-- footer -->

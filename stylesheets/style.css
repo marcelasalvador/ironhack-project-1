@@ -183,13 +183,17 @@ a {
 /* quiz page */
 
 .quiz_intro {
+    display:flex;
+    margin-top: 8vh;
     width: 80vw;
-    margin-top: 10vh;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
-.quiz_intro h4 {
+.quiz_intro h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    /* font-size: 20px; */
     line-height: 120.68%;
 
 }
@@ -197,9 +201,12 @@ a {
 .quiz_intro p {
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 161.68%;
-    
+    /* width: 70vw; */
+    margin-bottom: 10vh;
+    /* justify-content: center;
+    align-items: center */
    
 }
 
@@ -228,18 +235,10 @@ a {
     
 }
 
-#counter {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 120.68%;
-    color: #9B9B9B;
+
+.qDiv {
+    margin-bottom: 6vh;
 }
-
-/* #counter hr {
-    color: #9B9B9B;
-} */
-
 .question {
     font-style: normal;
     font-weight: 700;
@@ -272,6 +271,24 @@ a {
     
 }
 
+input {
+    margin: 0 0 0 25px;
+     color: white;
+    background-color: #6667AB;
+    padding: 1vh;
+    border:none;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+
+}
+
+input:hover {
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+
+
 
 
 /* TODO change selection background color  */
@@ -288,10 +305,81 @@ a {
 .scoreDiv {
     visibility: hidden;
     height: 0px;
+    /* width: 90vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    /* padding: 25px; */
 }
+
+.pass_left {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width:30vw;
+    margin-right:auto;
+}
+
+#score_h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120.68%;
+    margin-bottom: 5vh;
+}
+
+#pass_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 164.68%;
+}
+
+#score-button {
+margin: 5vh 0 0 0;
+    color: white;
+   background-color: #6667AB;
+   padding: 1vh;
+   border:none;
+   border-radius: 10px;
+   transition: all 0.3s ease 0s;
+}
+
+
+#score-button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+
+#pass {
+    width: auto;
+    display:flex;
+    align-items: center;
+    
+  
+  }
+
+/* #pass_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:30vw;
+    padding-right:20vw;
+} */
+
+.percentageContainer {
+    font-weight: bold;
+    font-size: 4rem;
+    
+}
+
+
 
 footer {
     font-size: smaller;
     color: grey;
     margin-top: 10vh;
 }
+
