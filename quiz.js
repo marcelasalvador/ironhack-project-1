@@ -13,8 +13,8 @@ function check() {
     let q7=document.quiz_choices.question7.value;
     let q8=document.quiz_choices.question8.value;
     if (q1==="choice1"){c++}
-    if (q2==="choice1"){c++}
-    if (q3==="choice1"){c++}
+    if (q2==="choice2"){c++}
+    if (q3==="choice3"){c++}
     if (q4==="choice1"){c++}
     if (q5==="choice1"){c++}
     if (q6==="choice1"){c++}

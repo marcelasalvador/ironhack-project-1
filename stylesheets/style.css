@@ -289,22 +289,10 @@ input:hover {
 }
 
 
-
-
-/* TODO change selection background color  */
-
-/* .choice input:checked {
-    background-color: #2eaadc;
-} */
-
-/* .qDiv {
-    visibility: hidden;
-    height: 0vh;
-} */
-
 .scoreDiv {
     visibility: hidden;
     height: 0px;
+    vertical-align:top;
     /* width: 90vw; */
     display: flex;
     flex-direction: row;
@@ -318,7 +306,7 @@ input:hover {
     flex-direction: column;
     justify-content:center;
     width:30vw;
-    margin-right:auto;
+    margin-right: 6rem;
 }
 
 #score_h1 {
@@ -361,21 +349,61 @@ margin: 5vh 0 0 0;
   
   }
 
-/* #pass_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width:30vw;
-    padding-right:20vw;
-} */
-
 .percentageContainer {
     font-weight: bold;
     font-size: 4rem;
     
 }
 
+.fail_left {
+    display: flex;
+    flex-direction: column;
+    align-content:;
+    justify-content:;
+    width:30vw;
+    margin-right: 6rem;
+   
+}
 
+#score_h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120.68%;
+    margin-bottom: 5vh;
+}
+
+#fail_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 164.68%;
+}
+
+#score-button {
+margin: 5vh 0 0 0;
+    color: white;
+   background-color: #6667AB;
+   padding: 1vh;
+   border:none;
+   border-radius: 10px;
+   transition: all 0.3s ease 0s;
+}
+
+
+#score-button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+
+#fail {
+    width: auto;
+    display:flex;
+    align-items: center;
+    
+  
+  }
 
 footer {
     font-size: smaller;
