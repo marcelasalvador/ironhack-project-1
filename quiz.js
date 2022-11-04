@@ -66,24 +66,3 @@ let percentage = ((c/8) * 100)
     }
 
 
-progress bar function
-
-let scoreCircle = document.querySelector(".scoreCircle");
-let percentageContainer = document.querySelector(".percentageContainer");
-
-let scoreValue = 0
-let scoreValueEnd = (check()) //?
-let speed = 50;
-
-let score = setInterval(() => {
-    scoreValue++;
-   percentageContainer.textContent = `${scoreValue}%`;
-    scoreCircle.style.background = `conic-gradient(
-        #6667ab ${scoreValue * 3.6}deg,
-        ##A09E9E ${scoreValue * 3.6}deg
-        )`;
-if (scoreValue == scoreValueEnd) {
-            clearInterval(score);
-          }
-}, speed);
-
