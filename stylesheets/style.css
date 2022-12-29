@@ -8,20 +8,109 @@
 
 }
 
-/* TODO burger menu */
 
-@media only screen
-and (max-width : 1100px) {
-    nav {
-        visibility: hidden;
-       
+@media only screen and (max-width: 1160px)  {
+
+    html {
+        width: 100vw; 
+        min-height: 100%;
+      }
+    header {
+        
+        padding: 2.5vh 0 5vh 0vh;
     }
+
+    
+    
+    body {
+        width: 100vw; 
+        min-height: 100%;
+      }
+
+    #landing-page {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap-reverse
+        
+    }
+
+    .landing_left {
+        display: flex;
+        flex-direction: column; /* stack items vertically */
+        align-items: center; /* center items horizontally within the container */
+        justify-content:center;
+        width: 80vw;
+        margin-left: auto;
+        
+        
+      }
+    
+      .landing_left h1 {
+        font-size: 6vw;
+        width: 100%;
+        
+      }
 
     #landing_img {
-        display:none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content:center;
+        max-width: 90%; 
+        height:auto; 
+        padding-bottom: 5%; 
+        object-fit: contain;
+       
+      }
+
+    
+      #intro_text {
+        font-size: 4vw;
+        padding-bottom: 5vh;
+      }
+    
+      #quiz {
+        font-size: 14px; 
+      }
+
+      /* quiz page */
+
+      .quiz_intro {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:flex-start;
+        width: 90vw;
+        height: auto;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .quiz_intro h1 {
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120.68%;
+    
     }
     
+    .quiz_intro p {
+        margin:auto;
+    
+    }
+    
+    
+    
+      
+     
+    
 }
+
+  
+/* main css */
 
 html {
     height:100%;
@@ -57,7 +146,7 @@ a {
 .nav_links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 30vw;
     align-items: center;
     list-style: none;
@@ -211,10 +300,15 @@ a {
 }
 
 .quiz_container {
-    width: 50%;
-    height:50vh;
-    overflow:scroll;
-    /* overflow-x:hidden; */
+    width: 75%;
+    height:75vh;
+    overflow:scroll; /* centers items horizontally within the container */
+    margin: auto; 
+    align-items: center;
+    border: 0.5px lightgrey solid;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 
@@ -410,4 +504,3 @@ footer {
     color: grey;
     margin-top: 10vh;
 }
-
