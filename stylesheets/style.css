@@ -24,7 +24,10 @@
     
     body {
         width: 100vw; 
-        min-height: 100%;
+       height: 50vh;
+       margin: 0 auto;
+       display: flex;
+       flex-direction: column;
       }
 
     #landing-page {
@@ -103,11 +106,152 @@
     }
     
     
+    /* score page */
+    .hidden-item {
+        display: none;
+      }
+
     
-      
+     
+
+     
+ 
+
+
+
+    #fail {
+        /* visibility: hidden;
+        height: 0px;
+        vertical-align:top;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-around; */
+
+        width: 100vw;
+        height:auto;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        
+     
+    }
+
+    #pass {
+        /* visibility: hidden;
+        height: 0px;
+        vertical-align:top;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-around; */
+
+        width: 100%;
+        height:auto;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        /* flex-wrap: wrap-reverse */
+    
+    }
+
+    /* .a{
+        visibility: none;
+    } */
+    .allScores {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+
+    }
+
+    .scoreDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height:auto;
+        object-fit: contain;
+    }
+
+    .fail_left {
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content:center;
+        max-width: 100%; 
+        height:auto; 
+        padding-bottom: 5%; 
+        object-fit: contain;
+        
+      }
+
+      .fail_right {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content:center;
+        max-width: 100%; 
+        height:auto; 
+        padding-bottom: 5%; 
+        object-fit: contain;
+        order:-1
+      }
+
+      .pass_left {
+        
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content:center;
+        max-width: 70%; 
+        height:auto; 
+        padding-bottom: 5%; 
+        object-fit: contain;
+        
+        
+      }
+    
+      .pass_right {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; 
+        justify-content:center;
+        max-width: 90%; 
+        height:auto; 
+        padding-bottom: 5%; 
+        object-fit: contain;
+        order:-1
+      }
      
     
 }
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
 
   
 /* main css */
@@ -382,6 +526,17 @@ input:hover {
 
 }
 
+/* .allScores {
+    display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+ 
+   
+  } */
 
 .scoreDiv {
     visibility: hidden;
@@ -452,8 +607,7 @@ margin: 5vh 0 0 0;
 .fail_left {
     display: flex;
     flex-direction: column;
-    align-content:;
-    justify-content:;
+ 
     width:30vw;
     margin-right: 6rem;
    

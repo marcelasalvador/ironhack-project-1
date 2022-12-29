@@ -1,26 +1,32 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheets/style.css"/>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-<!-- TODO - FAVICON -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- TODO - FAVICON -->
     <title>Quiz</title>
 </head>
+
 <body>
     <header>
-        <a id="logo" href="index.html"><p>Finance Quiz</p></a>
-        <nav class="nav_links" >
+        <a id="logo" href="index.html">
+            <p>Finance Quiz</p>
+        </a>
+        <nav class="nav_links">
             <!-- <a href="#">About</a> -->
-           <!-- <a href="quiz.html">Quiz</a> -->
-           <!-- <a href="#">Resources</a> -->
-           <a id="login" href="index.html"><button>Home</button><a>      
-   </nav>
-        
-     
+            <!-- <a href="quiz.html">Quiz</a> -->
+            <!-- <a href="#">Resources</a> -->
+            <a id="login" href="index.html"><button>Home</button><a>
+        </nav>
+
+
     </header>
 
     <div class="quiz_intro">
@@ -28,123 +34,136 @@
         <br>
         <p>This quiz will help you measure your personal finance knowledge. Select one answer per question.
         </p>
-       
+
     </div>
 
     <!-- quiz area -->
 
     <div class="quiz_container">
-        
-        
-        
-            <form name="quiz_choices" id="quiz_choices">
 
-                <div class="qDiv" id="question1-1">
-                    <p class="question"> 1. What's one of the most popular budgeting methods?</p>
-                    <p class="choice"><input type="radio" name="question1" value="choice1"> 50/30/20</p>
-                    <p class="choice"><input type="radio" name="question1" value="choice2"> 20/20/60</p>
-                    <p class="choice"><input type="radio" name="question1" value="choice3"> 30/50/20</p>
-                    <!-- <button id="next">Next</button>  -->
-                </div>
+        <form name="quiz_choices" id="quiz_choices">
 
-                <div class="qDiv" id="question2-2">
-                    <p class="question"> 2. Mint and YNAB are two of the most downloaded:</p>
-                    <p class="choice"><input type="radio" name="question2" value="choice1"> Finance e-books</p>
-                    <p class="choice"><input type="radio" name="question2" value="choice2"> Budgeting apps</p>
-                    <p class="choice"><input type="radio" name="question2" value="choice3"> Finance documentaries </p>
-                    <!-- <button id="previous">Previous</button>
+            <div class="qDiv" id="question1-1">
+                <p class="question"> 1. What's one of the most popular budgeting methods?</p>
+                <p class="choice"><input type="radio" name="question1" value="choice1"> 50/30/20</p>
+                <p class="choice"><input type="radio" name="question1" value="choice2"> 20/20/60</p>
+                <p class="choice"><input type="radio" name="question1" value="choice3"> 30/50/20</p>
+                <!-- <button id="next">Next</button>  -->
+            </div>
+
+            <div class="qDiv" id="question2-2">
+                <p class="question"> 2. Mint and YNAB are two of the most downloaded:</p>
+                <p class="choice"><input type="radio" name="question2" value="choice1"> Finance e-books</p>
+                <p class="choice"><input type="radio" name="question2" value="choice2"> Budgeting apps</p>
+                <p class="choice"><input type="radio" name="question2" value="choice3"> Finance documentaries </p>
+                <!-- <button id="previous">Previous</button>
                     <button id="next">Next</button>  -->
-                    <!-- <button onclick="checkQuestion2()">Next</button>
+                <!-- <button onclick="checkQuestion2()">Next</button>
                     <button onclick="previousQuestion2()">Previous</button>  -->
-                </div>
+            </div>
 
-                <div class="qDiv" id="question3-3">
-                    <p class="question"> 3. It is important to “pay yourself first” to ensure...</p>
-                    <p class="choice"><input type="radio" name="question3" value="choice1"> money is set aside for concerts</p>
-                    <p class="choice"><input type="radio" name="question3" value="choice2"> money is set aside for a new car</p>
-                    <p class="choice"><input type="radio" name="question3" value="choice3"> money is set aside for unexpected expenses</p>
-                    <!-- <button id="previous">Previous</button>
+            <div class="qDiv" id="question3-3">
+                <p class="question"> 3. It is important to “pay yourself first” to ensure...</p>
+                <p class="choice"><input type="radio" name="question3" value="choice1"> money is set aside for concerts
+                </p>
+                <p class="choice"><input type="radio" name="question3" value="choice2"> money is set aside for a new car
+                </p>
+                <p class="choice"><input type="radio" name="question3" value="choice3"> money is set aside for
+                    unexpected expenses</p>
+                <!-- <button id="previous">Previous</button>
                     <button id="next">Next</button>  -->
-                </div>
+            </div>
 
-                <div class="qDiv" id="question4-4">
-                    <p class="question"> 4. Your emergency fund should cover between...</p>
-                    <p class="choice"><input type="radio" name="question4" value="choice1"> three and six months worth of household expenses </p>
-                    <p class="choice"><input type="radio" name="question4" value="choice2"> three and six weeks worth of household expenses</p>
-                    <p class="choice"><input type="radio" name="question4" value="choice3"> one month worth of household expenses</p>
-                    <!-- <button id="previous">Previous</button>
+            <div class="qDiv" id="question4-4">
+                <p class="question"> 4. Your emergency fund should cover between...</p>
+                <p class="choice"><input type="radio" name="question4" value="choice1"> three and six months worth of
+                    household expenses </p>
+                <p class="choice"><input type="radio" name="question4" value="choice2"> three and six weeks worth of
+                    household expenses</p>
+                <p class="choice"><input type="radio" name="question4" value="choice3"> one month worth of household
+                    expenses</p>
+                <!-- <button id="previous">Previous</button>
                     <button id="next">Next</button>  -->
-                </div>
+            </div>
 
-                <div class="qDiv" id="question5-5">
-                    <p class="question"> 5. Don't spend more than you earn to keep debt from getting out of hand.</p>
-                    <p class="choice"><input type="radio" name="question5" value="choice1"> True</p>
-                    <p class="choice"><input type="radio" name="question5" value="choice2"> False</p>
-                    <p class="choice"><input type="radio" name="question5" value="choice3"> It depends</p>
-                </div>
+            <div class="qDiv" id="question5-5">
+                <p class="question"> 5. Don't spend more than you earn to keep debt from getting out of hand.</p>
+                <p class="choice"><input type="radio" name="question5" value="choice1"> True</p>
+                <p class="choice"><input type="radio" name="question5" value="choice2"> False</p>
+                <p class="choice"><input type="radio" name="question5" value="choice3"> It depends</p>
+            </div>
 
-                <div class="qDiv" id="question6-6">
-                    <p class="question"> 6. Experts recommend keeping your credit card balance below 30% of your total available credit...</p>
-                    <p class="choice"><input type="radio" name="question6" value="choice1"> to improve your credit score</p>
-                    <p class="choice"><input type="radio" name="question6" value="choice2"> to avoid taxes</p>
-                    <p class="choice"><input type="radio" name="question6" value="choice3"> to get more cash back</p>
-                </div>
+            <div class="qDiv" id="question6-6">
+                <p class="question"> 6. Experts recommend keeping your credit card balance below 30% of your total
+                    available credit...</p>
+                <p class="choice"><input type="radio" name="question6" value="choice1"> to improve your credit score</p>
+                <p class="choice"><input type="radio" name="question6" value="choice2"> to avoid taxes</p>
+                <p class="choice"><input type="radio" name="question6" value="choice3"> to get more cash back</p>
+            </div>
 
-                <div class="qDiv" id="question7-7">
-                    <p class="question"> 7. A FICO score between 800 to 850 is:</p>
-                    <p class="choice"><input type="radio" name="question7" value="choice1"> Exceptional</p>
-                    <p class="choice"><input type="radio" name="question7" value="choice2"> Very poor</p>
-                    <p class="choice"><input type="radio" name="question7" value="choice3"> Fair</p>
-                </div>
+            <div class="qDiv" id="question7-7">
+                <p class="question"> 7. A FICO score between 800 to 850 is:</p>
+                <p class="choice"><input type="radio" name="question7" value="choice1"> Exceptional</p>
+                <p class="choice"><input type="radio" name="question7" value="choice2"> Very poor</p>
+                <p class="choice"><input type="radio" name="question7" value="choice3"> Fair</p>
+            </div>
 
-                <div class="qDiv" id="question8-8">
-                    <p class="question"> 8. Payments history determines ___ of your credit score.</p>
-                    <p class="choice"><input type="radio" name="question8" value="choice1"> 35%</p>
-                    <p class="choice"><input type="radio" name="question8" value="choice2"> 10%</p>
-                    <p class="choice"><input type="radio" name="question8" value="choice3"> 5%</p>
-                </div>
+            <div class="qDiv" id="question8-8">
+                <p class="question"> 8. Payments history determines ___ of your credit score.</p>
+                <p class="choice"><input type="radio" name="question8" value="choice1"> 35%</p>
+                <p class="choice"><input type="radio" name="question8" value="choice2"> 10%</p>
+                <p class="choice"><input type="radio" name="question8" value="choice3"> 5%</p>
+            </div>
 
-                <input type ="button" name="" value="Submit" onclick="check()">
-            </form>
+            <input type="button" name="" value="Submit" onclick="check()">
+        </form>
 
-            
+
     </div>
 
-   <!-- pass div -->
+    <!-- pass div -->
+   
+<div class="allScores">
+        <div class="scoreDiv" id="pass">
+            <div class="pass_left">
+                <h1 id="score_h1">Your Score</h1>
+                <p id="pass_text">Congratulations, you passed! Visit Investopedia.com and other free online resources to
+                    keep improving your personal finance skills and knowledge.</p>
+                <a href='https://www.investopedia.com/terms/p/personalfinance.asp'><button id="score-button">Learn
+                        More</button> </a>
+            </div>
 
-    <div class="scoreDiv" id="pass"> 
-        <div class="pass_left">
-            <h1 id="score_h1">Your Score</h1>
-            <p id="pass_text">Congratulations, you passed! Visit Investopedia.com and other free online resources to keep improving your personal finance skills and knowledge.</p>
-            <a href='https://www.investopedia.com/terms/p/personalfinance.asp'><button id="score-button">Learn More</button> </a>
-        </div>
-
-        <div id="pass">
-            <div class="scoreCircle">
-                <div class="percentageContainer">
-                    <p><span id="percentage">0</span>%</p>
+            <div class="pass_right" id="pass">
+                <div class="scoreCircle">
+                    <div class="percentageContainer">
+                        <p><span id="percentage">0</span>%</p>
+                    </div>
                 </div>
             </div>
-        </div> 
-    </div>
-
-  <!-- fail div  -->
-
-    <div class="scoreDiv" id="fail"> 
-        <div class="fail_left">
-            <h1 id="score_h1">Your Score</h1>
-            <p id="fail_text">Not understanding how to manage finances or be financially disciplined has led Americans to accumulate enormous debt. Visit Investopedia.com and other free online resources to improve your personal finance skills and knowledge.</p>
-            <a href='quiz.html'><button id="score-button">Try Again</button></a>
         </div>
 
-        <div id="fail">
-            <div class="scoreCircle">
-                <div class="percentageContainer">
-                    <p><span id="percentage2">0</span>%</p>
+        <!-- fail div  -->
+
+        <div class="scoreDiv" id="fail">
+            <div class="fail_left">
+                <h1 id="score_h1">Your Score</h1>
+                <p id="fail_text">Not understanding how to manage finances or be financially disciplined has led
+                    Americans
+                    to accumulate enormous debt. Visit Investopedia.com and other free online resources to improve your
+                    personal finance skills and knowledge.</p>
+                <a href='quiz.html'><button id="score-button">Try Again</button></a>
+            </div>
+
+            <div class="fail_right" id="fail">
+                <div class="scoreCircle">
+                    <div class="percentageContainer">
+                        <p><span id="percentage2">0</span>%</p>
+                    </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
+   
 
     <!-- footer -->
     <footer>Source: Investopedia.com</footer>
