@@ -31,11 +31,11 @@ let percentage = ((c/8) * 100)
     if (c >= 4) {
     
     quizContainer.style.visibility = "hidden";
-    quizContainer.style.height = "0px";
+    quizContainer.style.height = "0vh";
 
     
     quizContainerIntro.style.visibility = "hidden";
-    quizContainerIntro.style.height = "0px";
+    quizContainerIntro.style.height = "0vh";
 
     let passContainer = document.querySelector("#pass");
     passContainer.style.visibility = "visible";
@@ -49,11 +49,11 @@ let percentage = ((c/8) * 100)
     } else {
             
         quizContainer.style.visibility = "hidden";
-        quizContainer.style.height = "0px";
+        quizContainer.style.height = "0vh";
 
          
         quizContainerIntro.style.visibility = "hidden";
-        quizContainerIntro.style.height = "0px";
+        quizContainerIntro.style.height = "0vh";
 
         let failContainer = document.querySelector("#fail");
         failContainer.style.visibility = "visible";
